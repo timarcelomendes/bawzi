@@ -22,11 +22,10 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
-  <<: *default
-  database: development
-  username: postgres
-  password: postgres
-  host: localhost
+  database: d1vrgrn84eaj6r
+  username: lraourtkkbcjdc
+  password: 205db4ff8f5a461b8fa3fb9ec4ea47b42ae941f39ff46d91d772c8e18845f31c
+  host: ec2-52-44-139-108.compute-1.amazonaws.com
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -60,10 +59,10 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: test
-  username: postgres
-  password: postgres
-  host: localhost
+  database: d1vrgrn84eaj6r
+  username: lraourtkkbcjdc
+  password: 205db4ff8f5a461b8fa3fb9ec4ea47b42ae941f39ff46d91d772c8e18845f31c
+  host: ec2-52-44-139-108.compute-1.amazonaws.com
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
