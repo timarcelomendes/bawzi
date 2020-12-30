@@ -60,8 +60,10 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: bawzi_test
-  localhost:
+  database: d18am6mgb8450u
+  username: lgkmvrxafdhmnd
+  password: f31c9df66d214561930c82f490fd5e1eed616e61569d576a0bd288abdd50fece
+  localhost: ec2-54-172-219-218.compute-1.amazonaws.com
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
