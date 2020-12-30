@@ -87,6 +87,7 @@ test:
 #
 production:
   <<: *default
-  database: bawzi_production
-  username: bawzi
-  password: <%= ENV['BAWZI_DATABASE_PASSWORD'] %>
+  database: d4ce0qio05gstm
+  username: vkqponoddntvwi
+  password: 0f581ca7d4b10344eb8b162c24803fea82ff0335a4afa9adf9d8ae0c734168ce
+  localhost: ec2-54-197-48-79.compute-1.amazonaws.com
