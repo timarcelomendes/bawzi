@@ -23,7 +23,10 @@ default: &default
 
 development:
   <<: *default
-  database: bawzi_development
+  database: d6nnuunp6gq7mp
+  username: ghugijzunsczdo
+  password: 9a2dab5b4280c570db1fce5e9ce85e115df13f45ba612f9384921b671fed3311
+  host: ec2-23-23-58-157.compute-1.amazonaws.com
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
