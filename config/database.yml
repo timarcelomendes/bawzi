@@ -15,17 +15,18 @@
 # gem 'pg'
 #
 default: &default
-  adapter: postgresql
+  adapter: PostgreSQL
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
-  database: d1vrgrn84eaj6r
-  username: lraourtkkbcjdc
-  password: 205db4ff8f5a461b8fa3fb9ec4ea47b42ae941f39ff46d91d772c8e18845f31c
-  host: ec2-52-44-139-108.compute-1.amazonaws.com
+  <<: *default
+  database: dboauuchbeq3u6
+  username: mjurdqedjiwchu
+  password: 2b532af14f9223513cc8f529a01544461a8e2e8c06dfa06a00d843f04857dc49
+  host: ec2-54-175-243-75.compute-1.amazonaws.com
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -59,10 +60,10 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: d1vrgrn84eaj6r
-  username: lraourtkkbcjdc
-  password: 205db4ff8f5a461b8fa3fb9ec4ea47b42ae941f39ff46d91d772c8e18845f31c
-  host: ec2-52-44-139-108.compute-1.amazonaws.com
+  database: dboauuchbeq3u6
+  username: mjurdqedjiwchu
+  password: 2b532af14f9223513cc8f529a01544461a8e2e8c06dfa06a00d843f04857dc49
+  host: ec2-54-175-243-75.compute-1.amazonaws.com
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -86,7 +87,7 @@ test:
 #
 production:
   <<: *default
-  database: d1vrgrn84eaj6r
-  username: lraourtkkbcjdc
-  password: 205db4ff8f5a461b8fa3fb9ec4ea47b42ae941f39ff46d91d772c8e18845f31c
-  host: ec2-52-44-139-108.compute-1.amazonaws.com
+  database: dboauuchbeq3u6
+  username: mjurdqedjiwchu
+  password: 2b532af14f9223513cc8f529a01544461a8e2e8c06dfa06a00d843f04857dc49
+  host: ec2-54-175-243-75.compute-1.amazonaws.com
